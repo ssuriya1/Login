@@ -1,96 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-        body {
-           color: #fff;
-           background: url("background.jpg");
-           background-size: 100%;
-           font-size: 18px;
-    	display: grid;
-           place-items: center;
-        }
 
-       .box{
-           background: rgba(0,0,0,.8);
-           width: 400px;
-           padding: 4%;
-           border-radius: 10px;
-       }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    color: #fff;
+    background: url("background.jpg");
+    background-size: 100%;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+  }
 
-       .box form {
-    	display: grid;
-           place-items: center;
-    	justify-items: stretch;
-    }
+  .box {
+    background: rgba(0, 0, 0, .8);
+    width: 400px;
+    padding: 2%;
+    border-radius: 10px;
+  }
 
-       .inputbox{
-           position: relative;
-           padding: 8% 0;
-       }
+  .box form {
+    display: grid;
+    place-items: center;
+    justify-items: stretch;
+  }
 
-       .inputbox input{
-           border: 1px solid red;
-           outline: none;
-           background: none;
-           border-radius: 20px;
-           width: 40%;
-           color: #fff;
-           transition: 0.5s;
-           font-size: 18px;
-           padding: 10px;
-       }
-        .inputbox input:focus, .inputbox input:valid{
-           border: 1px solid green;
-           color: #fff;
-           width: 95%;
-       }
+  .inputbox {
+    position: relative;
+    padding: 8% 0;
+  }
 
-       .inputbox label{
-           position: absolute;
-           top: 0%;
-           left: 0%;
-       }
+  .inputbox input {
+    border: 1px solid red;
+    outline: none;
+    background: none;
+    border-radius: 20px;
+    width: 40%;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 18px;
+    padding: 10px;
+  }
 
-       .submit {
-           border: none;
-           outline: none;
-           font-size: 18px;
-           background-color: blue;
-           border-radius: 10px;
-           padding: 10px 15px;
-           color: white;
-           cursor: pointer;
-           transition: 0.5s;
-       }
+  .inputbox input:focus,
+  .inputbox input:valid {
+    border: 1px solid green;
+    color: #fff;
+    width: 95%;
+  }
 
-       .submit:hover {
-       	background-color: green;
-       }
+  .inputbox label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
 
-       .forgotPassword{
-       	color: white;
-           padding-bottom: 2rem;
-       }
-  </style>
-  <body>
-    <div class="box">
-      <form>
-        <div class="inputbox">
-          <label>Username :</label>
-          <input type="text" required />
-        </div>
-        <div class="inputbox">
-          <label>Password :</label>
-          <input type="password" required />
-        </div>
-        <a href="#" class="forgotPassword">Forgot password ?</a>
-        <input class="submit" type="submit" />
-      </form>
-    </div>
-  </body>
+  .box input[type="submit"] {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 30%;
+    transform: translate(120%);
+  }
+
+  .box input[type="submit"]:hover {
+    background-color: green;
+  }
+
+  .forgotPassword {
+    color: white;
+    padding-bottom: 2rem;
+  }
+</style>
+
+<body>
+  <div class="box">
+    <form>
+      <div class="inputbox">
+        <label>Username :</label>
+        <input type="text" required>
+      </div>
+      <div class="inputbox">
+        <label>Password :</label>
+        <input type="password" required>
+      </div>
+      <a href="#" class="forgotPassword">Forgot password ?</a>
+      <input class="submit" type="submit">
+    </form>
+  </div>
+</body>
+
 </html>

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Box</title>
-  </head>
-  <style>
+</head>
+<style>
     body {
         background: url("background.jpg");
         background-size: 100%;
@@ -72,30 +73,32 @@
         border-radius: 5px;
         cursor: pointer;
         padding: 10px 20px;
-        position: relative;
+        width: 30%;
+        transform: translate(120%);
     }
 
     .forgotPassword {
         color: white;
         padding-bottom: 2rem;
     }
-  </style>
+</style>
 
-  <body>
+<body>
     <div class="box">
-      <h2>Login</h2>
-      <form>
-        <div class="inputbox">
-          <input type="text" required />
-          <label>Username</label>
-        </div>
-        <div class="inputbox">
-          <input type="password" required />
-          <label>Password</label>
-        </div>
-        <a class="forgotPassword" href="#">Forgot Password ?</a>
-        <input type="submit" />
-      </form>
+        <h2>Login</h2>
+        <form>
+            <div class="inputbox">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="inputbox">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <a class="forgotPassword" href="#">Forgot Password ?</a>
+            <input type="submit">
+        </form>
     </div>
-  </body>
+</body>
+
 </html>

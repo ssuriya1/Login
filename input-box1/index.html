@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Input Box</title>
-</head>
-<style>
+  </head>
+  <style>
     body {
         background: url("background.jpg");
         background-size: 100%;
         color: #fff;
+        display: grid;
+        place-items: center;
     }
 
     .box {
-        /* display: flex;
-        justify-content: center;
-        align-items: center;
-        display: grid;
-        place-items: center;*/
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         width: 400px;
         padding: 3%;
         background: rgba(0, 0, 0, .8);
         box-sizing: border-box;
         border-radius: 10px;
+    }
+
+    .box form {
+        display: grid;
+        width: 100%;
     }
 
     .box h2 {
@@ -57,7 +54,7 @@
         left: 0%;
         padding: 10px 0;
         font-size: 16px;
-        transition: .5s;
+        transition: 0.5s;
     }
 
     .box .inputbox input:focus~label,
@@ -76,25 +73,29 @@
         cursor: pointer;
         padding: 10px 20px;
         position: relative;
-        transform: translate(150%, 0%);
     }
-</style>
 
-<body>
+    .forgotPassword {
+        color: white;
+        padding-bottom: 2rem;
+    }
+  </style>
+
+  <body>
     <div class="box">
-        <h2>Login</h2>
-        <form>
-            <div class="inputbox">
-                <input type="text" required>
-                <label>Username</label>
-            </div>
-            <div class="inputbox">
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <input type="submit">
-        </form>
+      <h2>Login</h2>
+      <form>
+        <div class="inputbox">
+          <input type="text" required />
+          <label>Username</label>
+        </div>
+        <div class="inputbox">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <a class="forgotPassword" href="#">Forgot Password ?</a>
+        <input type="submit" />
+      </form>
     </div>
-</body>
-
+  </body>
 </html>

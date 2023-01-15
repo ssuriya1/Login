@@ -11,8 +11,6 @@
         background: url("background.jpg");
         background-size: 100%;
         color: #fff;
-        display: grid;
-        place-items: center;
     }
 
     .box {
@@ -21,11 +19,10 @@
         background: rgba(0, 0, 0, .8);
         box-sizing: border-box;
         border-radius: 10px;
-    }
-
-    .box form {
-        display: grid;
-        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .box h2 {

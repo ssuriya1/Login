@@ -12,8 +12,6 @@
     background: url("background.jpg");
     background-size: 100%;
     font-size: 18px;
-    display: grid;
-    place-items: center;
   }
 
   .box {
@@ -21,12 +19,10 @@
     width: 400px;
     padding: 2%;
     border-radius: 10px;
-  }
-
-  .box form {
-    display: grid;
-    place-items: center;
-    justify-items: stretch;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .inputbox {
